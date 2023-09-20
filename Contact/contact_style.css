@@ -1,0 +1,229 @@
+main{
+    margin-top: 55px;
+}
+
+.part1{
+    position: relative;
+}
+
+.part1-image{
+    width: 100%;
+    height: 350px;
+}
+
+.part1-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.part1-text{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom , rgba(255, 255, 255, 0) , rgb(255, 255, 255));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    padding-left: 30px;
+}
+
+.part1-text h2{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(119, 149, 172);
+    font-family: 'Playfair Display', serif;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.part2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 80px 0 50px 0;
+    padding-top: 40px;
+}
+
+.contact-icon{
+    width: 20px;
+}
+
+.part2-contact p{
+    font-size: 17px;
+}
+
+.contact-label{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.part2-contact{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.part2-form{
+    height: 95%;
+    width: 35%;
+}
+
+.part2-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+.part2-form form input , .part2-form form textarea{
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid rgb(180, 179, 179);
+    outline: none;
+}
+
+.part2-form form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.part2-form form button{
+    background-color: #62929E;
+    border: none;
+    outline: none;
+    padding: 10px 60px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 0px 3px rgba(255, 255, 255, 0.829);
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.part2-form form button:hover{
+    background-color: #1e4b56;
+    padding: 12px 63px;
+    color: white;
+    text-shadow: none;
+}
+
+.harta{
+    width: 100%;
+    height: 350px;
+    border-top: 1px solid rgb(205, 202, 202);
+    outline: none;
+}
+
+.part4{
+    position: relative;
+}
+
+.part4-image{
+    width: 100%;
+    height: 350px;
+}
+
+.part4-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.part4-text{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.675);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part4-text h2{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    text-shadow: 1px 1px 3px rgb(37, 79, 108);
+    letter-spacing: 2px;
+    word-spacing: 3px;
+
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        margin-top: 0px;
+    }
+
+    .part1-text{
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+    .part1-text h2{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+
+    .part2{
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .part2-contact{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-around;
+        margin: 30px 0;
+    }
+
+    .part2-form{
+        height: 400px;
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .part2-form form{
+        margin: 0 auto;
+    }
+
+    .harta{
+        height: 300px;
+    }
+
+    .part4-image{
+        height: 300px;
+    }
+    
+    .part4-text{
+        height: 300px;
+    }
+
+    .part4-text h2{
+        font-size: 28px;
+        text-align: center;
+    }
+}

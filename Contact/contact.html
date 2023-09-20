@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVEN TOUR</title>
+    <link rel="website icon" type="png" href="../resurse/truck-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./contact_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+    <header>
+        <nav>
+            <div class="navBar" id="myNavBar">
+                <a href="../Acasa/acasa.html"><img src="../resurse/logo-removebg (1).png" alt="Aven-Tour"></a>
+                <div class="links">
+                    <a href="../Acasa/acasa.html">Acasă</a>
+                    <a href="../Despre Noi/despre_noi.html">Despre Noi</a>
+                    <a href="../Servicii/servicii.html">Servicii</a>
+                    <a href="../Intrebari Frecvente/intrebari.html">Întrebări Frecvente</a>
+                    <a href="../Contact/contact.html">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Partea 1: imagine de fundal si titlul paginii--> 
+        <div class="part1">
+            <div class="part1-image">
+                <img src="../resurse/camion-cere-oferta.jpg">
+            </div>
+
+            <div class="part1-text">
+                <h2>CONTACT</h2>
+            </div>
+        </div>
+        <!--Partea 2: date contact si formular-->
+
+        <div class="part2">
+            <div class="part2-contact">
+                <div>
+                    <p class="contact-label">TELEFON</p>
+                    <p><img class="contact-icon" src="../resurse/phone-icon.png"> &nbsp; 0790 674 818</p>
+                </div>
+
+                <div>
+                    <p class="contact-label">EMAIL</p>
+                    <p><img class="contact-icon" src="../resurse/email-icon.png"> &nbsp; aventoursrl@gmail.com</p>
+                </div>
+
+                <div>
+                    <p class="contact-label">ADRESA</p>
+                    <p><img class="contact-icon" src="../resurse/pin-icon.png">&nbsp; Str. Imasului, Nr. 2B, Et. 1, Birou 1, Iasi</p>
+                </div>
+            </div>
+
+            <div class="part2-form">
+                <form>
+                    <input id="input1" type="text" placeholder="Nume si prenume / Societate *" >
+                    <input id="input2" type="text" placeholder="Telefon *" >
+                    <input id="input3" type="email" placeholder="Email *" >
+                    <textarea placeholder="Mesajul tau"></textarea>
+                    <button onclick="trimiteMesaj()">Trimite mesaj</button>
+                    <img id="myImage">
+                </form>
+            </div>
+        </div>
+        <!--Partea 3: harta locatiei-->
+        <iframe class="harta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.3768422078047!2d27.59474871491995!3d47.150473427369434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb3541d193df%3A0xbef22f4cad0d71d6!2sAVEN-TOUR%20SRL!5e0!3m2!1sro!2sro!4v1681211550220!5m2!1sro!2sro" width="100%" height="350" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <!--Partea 4: imagine -->
+        <div class="part4">
+            <div class="part4-image">
+                <img src="../resurse/camioane-final.jpg">
+            </div>
+
+            <div class="part4-text">
+                <h2>YOUR SHIPMENT IS IN SAFE HANDS !</h2>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <div class="divFooter">
+            <div class="aboutCompany">
+                <p>CUI: RO 23687346
+                <br>Nr. ORC: J22/3859/2019
+                <br>Capital social: 200 RON
+                <br>Cont: RO17RZBR0000060022640275 (RON)
+                <br>Cont: RO53RZBR0000060022653983 (EURO)</p>
+            </div>
+
+            <div class="containerLogoFooter">
+                <a href="../Acasa/acasa.html"><img src="../resurse/logo-removebg (1).png" alt="Aven-Tour"></a>
+                <div class="socialMediaItems">
+                    <a href="https://www.facebook.com/"> <img src="https://logoeps.com/wp-content/uploads/2014/09/49665-facebook-logo-icon-vector-icon-vector-eps.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="https://freeiconshop.com/wp-content/uploads/edd/instagram-new-outline.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/?original_referer="><img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-1464529-1239440.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="meniuFooter">
+                <a href="../Acasa/acasa.html">Acasă</a>
+                <a href="../Despre Noi/despre_noi.html">Despre Noi</a>
+                <a href="../Servicii/servicii.html">Servicii</a>
+                <a href="../Intrebari Frecvente/intrebari.html">Întrebări Frecvente</a>
+                <a href="../Contact/contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./contact_script.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+</html>

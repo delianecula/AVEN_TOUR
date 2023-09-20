@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+main{
+    margin-top: 55px;
+}
+
+.part1{
+    position: relative;
+}
+
+.part1-image{
+    width: 100%;
+    height: 350px;
+}
+
+.part1-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part1-text{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom , rgba(255, 255, 255, 0) , rgb(255, 255, 255));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    padding-left: 30px;
+}
+
+.part1-text h2{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(119, 149, 172);
+    font-family: 'Playfair Display', serif;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.part2{
+    width: 55%;
+    height: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.part2-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2-image img{
+    width: 70%;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 10%;
+}
+
+.part2-text{
+    width: 100%;
+    text-align: center;
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.part2-text hr{
+    border: 1px solid #62929E;
+    width: 20%;
+    margin: 0;
+    
+}
+
+.part2-text h3{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #37567b;
+    text-shadow: 1px 0px 2px rgba(119, 227, 241, 0.577);
+}
+
+.part3{
+    width: 100%;
+    height: 450px;
+    background-color: #c6c5b9b5;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.part3 h3, .part4 h3{
+    font-size: 26px;
+    width: 70%;
+    text-align: center;
+    color: #37567b;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.flota-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.flota-cards-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 260px;
+    height: 200px;
+}
+
+.flota-cards-item img{
+    width: 80px;
+}
+
+.flota-text{
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.number{
+    font-size: 35px;
+    font-weight: 700;
+    color: #37567b;
+    margin: 0;
+}
+
+.part4{
+    width: 80%;
+    height: 550px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.part4-cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.part4-cards-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 420px;
+    justify-content: space-around;
+}
+
+.part4-cards-item img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 1px solid rgba(30, 121, 185, 0.577);
+    outline-offset: 8px;
+
+}
+
+.part4-cards-item p{
+    text-align: center;
+}
+
+.part4-cards-item h4{
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        margin-top: 0px;
+    }
+
+    .part1-text{
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .part1-text h2{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+
+    .part2{
+        width: 85%;
+        height: auto;
+    }
+
+    .flota-cards{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .part3{
+        height: auto;
+        padding: 20px 0px;
+    }
+    .flota-cards-item{
+        height: 180px;
+        margin: 20px 0px;
+    }
+    .part4-cards{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .part4{
+        width: 100%;
+        height: auto;
+    }
+    .part3 h3, .part4 h3{
+        margin: 15px 0px;
+    }
+
+    .part4-cards-item{
+        margin: 20px 0px;
+    }
+
+}
